@@ -16,6 +16,7 @@ provider "azurerm" {
   subscription_id = var.core_ARM_SUBSCRIPTION_ID
   client_id       = var.core_ARM_CLIENT_ID
   client_secret   = var.core_ARM_CLIENT_SECRET
+  version         = "= 1.37.0"
 }
 
 provider "azurerm" {
@@ -24,6 +25,7 @@ provider "azurerm" {
   subscription_id = var.app_ARM_SUBSCRIPTION_ID
   client_id       = var.app_ARM_CLIENT_ID
   client_secret   = var.app_ARM_CLIENT_SECRET
+  version         = "= 1.37.0"
 }
 
 module "vm" {
